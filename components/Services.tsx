@@ -39,7 +39,7 @@ export const Services = () => {
           <AuroraText>WHAT I DO</AuroraText>
         </h1>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-6xl">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (

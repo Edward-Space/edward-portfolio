@@ -55,7 +55,7 @@ export const WorkProcess = () => {
           </p>
         </div>
         
-        <div className="w-full max-w-6xl">
+        <div className="w-full">
           <div className="relative">
             {/* Timeline line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/50 via-primary/70 to-primary/50 hidden md:block" />

@@ -106,6 +106,23 @@ export const ProjectsData = [
     github: "https://gitlab.com/omni.channel/cds-ubergas-fe/-/tree/luxen-dev",
   },
   {
+    image: "/work/giathanh.png",
+    category: [
+      "NuxtJS",
+      "NuxtUI",
+      "Typescript",
+      "TailwindCSS",
+      "UnoCSS",
+      "Framer Motion",
+      "Iconify",
+    ],
+    name: "Điện Máy Gia Thành",
+    description:
+      "Luxen is a premium hospitality platform showcasing luxurious accommodations and services. It highlights modern designs, high-end amenities, and unforgettable experiences tailored for discerning travelers.",
+    link: "https://luxen.newweb.vn/",
+    github: "https://gitlab.com/omni.channel/cds-ubergas-fe/-/tree/luxen-dev",
+  },
+  {
     image: "/work/kozee.jpg",
     category: [
       "NextJS",
@@ -189,6 +206,116 @@ export const ProjectsData = [
     description:
       "Hoàng Gia specializes in premium interior design and construction services, delivering luxurious and tailor-made solutions for homes, offices, and hospitality spaces with a focus on sophistication and quality.",
     link: "https://hoanggia.newweb.vn/vi",
+    github:
+      "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+  },
+  {
+    image: "/work/dashjk.png",
+    category: [
+      "NextJS",
+      "NextUI",
+      "SWR",
+      "Typescript",
+      "TailwindCSS",
+      "Framer Motion", 
+      "Iconify",
+      "SwiperJS",
+      "React Hook Form",
+      "Zod",
+      "Recoil",
+    ],
+    name: "Dask JK",
+    description:
+      "Hoàng Gia specializes in premium interior design and construction services, delivering luxurious and tailor-made solutions for homes, offices, and hospitality spaces with a focus on sophistication and quality.",
+    link: "https://hoanggia.newweb.vn/vi",
+    github:
+      "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+  },
+  {
+    image: "/work/foodmap.png",
+    category: [
+      "NextJS",
+      "NextUI",
+      "SWR",
+      "Typescript",
+      "TailwindCSS",
+      "Framer Motion",
+      "Iconify",
+      "SwiperJS",
+      "React Hook Form",
+      "Zod",
+      "Recoil",
+    ],
+    name: "Food Map",
+    description:
+      "Hoàng Gia specializes in premium interior design and construction services, delivering luxurious and tailor-made solutions for homes, offices, and hospitality spaces with a focus on sophistication and quality.",
+    link: "https://hoanggia.newweb.vn/vi",
+    github:
+      "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+  },
+  {
+    image: "/work/hoanggia.png",
+    category: [
+      "NextJS",
+      "NextUI",
+      "SWR",
+      "Typescript",
+      "TailwindCSS",
+      "Framer Motion",
+      "Iconify",
+      "SwiperJS",
+      "React Hook Form",
+      "Zod",
+      "Recoil",
+    ],
+    name: "AI System",
+    description:
+      "Hoàng Gia specializes in premium interior design and construction services, delivering luxurious and tailor-made solutions for homes, offices, and hospitality spaces with a focus on sophistication and quality.",
+    link: "https://hoanggia.newweb.vn/vi",
+    github:
+      "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+  },
+  {
+    image: "/work/veron.png",
+    category: [
+      "NextJS",
+      "NextUI",
+      "SWR",
+      "Typescript",
+      "TailwindCSS",
+      "Framer Motion",
+      "Iconify",
+      "SwiperJS",
+      "React Hook Form",
+      "Zod",
+      "Recoil",
+    ],
+    name: "Veron Ai Academy",
+    description:
+      "Hoàng Gia specializes in premium interior design and construction services, delivering luxurious and tailor-made solutions for homes, offices, and hospitality spaces with a focus on sophistication and quality.",
+    link: "https://hoanggia.newweb.vn/vi",
+    github:
+      "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+  },
+  {
+    image: "/work/aspire.png",
+    category: [
+      "NextJS",
+      "NextUI",
+      "SWR",
+      "Typescript",
+      "TailwindCSS",
+      "Framer Motion",
+      "Iconify",
+      "SwiperJS",
+      "React Hook Form",
+      "Zod",
+      "Recoil",
+    ],
+    name: "Aspire Residential",
+    description:
+      "Hoàng Gia specializes in premium interior design and construction services, delivering luxurious and tailor-made solutions for homes, offices, and hospitality spaces with a focus on sophistication and quality.",
+    link: "https://aspire-residental.com/",
     github:
       "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
   },
