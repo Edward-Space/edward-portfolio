@@ -9,7 +9,7 @@ const stast = [
   },
   {
     title: "Experience",
-    description: "1.5+",
+    description: "2+",
   },
   {
     title: "Happy Clients",
