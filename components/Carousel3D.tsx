@@ -135,8 +135,9 @@ export const Carousel3D = ({
                       <Image
                         src={item.image}
                         alt={item.name}
-                        fill
-                        className="object-cover object-top rounded-t-lg"
+                        width={400}
+                        height={267}
+                        className="object-cover size-auto object-top rounded-t-lg"
                       />
                     </div>
                     <div className="p-4 flex flex-col flex-grow gap-2">

@@ -10,8 +10,8 @@ export const RootLayoutPage = ({
   return (
     <SidebarProvider className="bg-primary/20">
       {/* <AppSidebar /> */}
-      <SidebarInset className="py-5 px-3 bg-transparent">
-        <div className=" rounded-lg bg-background overflow-y-scroll h-[calc(100vh-40px)] scrollbar-hide">
+      <SidebarInset className="py-3 px-3 bg-transparent relative">
+        <div className=" rounded-lg bg-background overflow-y-scroll h-[calc(100vh-25px)] scrollbar-hide">
           {children}
         </div>
         <FloatRoute />

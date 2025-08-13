@@ -181,3 +181,28 @@ html::-webkit-scrollbar {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
+
+.tag::after,
+.tag::before {
+  content: "";
+  position: absolute;
+  background: red;
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.tag::after {
+  top: -1.125rem;
+  right: 0.01rem;
+  border-bottom-right-radius: 0.375rem;
+  box-shadow: 0.375rem 0.375rem #f7f0e5;
+  background: transparent;
+}
+
+.tag::before {
+  bottom: -1.125rem;
+  right: 0.01rem;
+  border-top-right-radius: 0.375rem;
+  box-shadow: 0.375rem -0.375rem #f7f0e5;
+  background: transparent;
+}
