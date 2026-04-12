@@ -2,6 +2,46 @@ import { IProject } from "@/model/projects";
 
 export const ProjectsData = [
   {
+    image: "/work/jemmia.png",
+    category: ["HTML", "CSS", "Javascript", "Swiper", "Bootstrap", "PWA"],
+    name: "Priority Jemmia",
+    description:
+      "Jemmia Priority offers exclusive access to high-value diamond and jewelry collections. It provides personalized services, ensuring exceptional quality and uniqueness for customers seeking timeless elegance.",
+    link: "https://priority.jemmia.vn/",
+    github: "https://github.com/lavensoft/jemmia-web",
+    author: "Lavenest Studio",
+  },
+  {
+    image: "/work/jemmia.png",
+    category: ["HTML", "CSS", "Javascript", "Swiper", "Bootstrap", "PWA"],
+    name: "Jemmia Diamond Ecommerce",
+    description:
+      "Jemmia Priority offers exclusive access to high-value diamond and jewelry collections. It provides personalized services, ensuring exceptional quality and uniqueness for customers seeking timeless elegance.",
+    link: "https://jemmia.vn/",
+    github: "https://github.com/lavensoft/jemmia-web",
+    author: "Jemmia Diamond",
+  },
+  {
+    image: "/work/jemmia.png",
+    category: ["HTML", "CSS", "Javascript", "Swiper", "Bootstrap", "PWA"],
+    name: "Jemmia Diamond Cữu Kim Di Sản",
+    description:
+      "Jemmia Priority offers exclusive access to high-value diamond and jewelry collections. It provides personalized services, ensuring exceptional quality and uniqueness for customers seeking timeless elegance.",
+    link: "https://jemmia.vn/pages/cuu-kim-di-san",
+    github: "https://github.com/lavensoft/jemmia-web",
+    author: "Jemmia Diamond",
+  },
+  {
+    image: "/work/jemmia.png",
+    category: ["HTML", "CSS", "Javascript", "Swiper", "Bootstrap", "PWA"],
+    name: "Jemmia Diamond Kim Cương Định Chuẩn",
+    description:
+      "Jemmia Priority offers exclusive access to high-value diamond and jewelry collections. It provides personalized services, ensuring exceptional quality and uniqueness for customers seeking timeless elegance.",
+    link: "https://jemmia.vn/pages/kim-cuong-dinh-chuan",
+    github: "https://github.com/lavensoft/jemmia-web",
+    author: "Jemmia Diamond",
+  },
+  {
     image: "/work/kingCoffee.png",
     category: [
       "NextJS",
@@ -22,6 +62,7 @@ export const ProjectsData = [
     link: "https://kozee-v2.newweb.vn/vi",
     github:
       "https://gitlab.com/omni.channel/client-nextjs-core/-/tree/king-ecom-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/madame.png",
@@ -44,6 +85,7 @@ export const ProjectsData = [
     link: "https://www.lehoangdiepthao.com/vi",
     github:
       "https://gitlab.com/omni.channel/client-nextjs-core/-/tree/king-ecom-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/distribution.png",
@@ -66,6 +108,7 @@ export const ProjectsData = [
     link: "https://distribution.kingcoffee.com/vi",
     github:
       "https://gitlab.com/omni.channel/client-nextjs-core/-/tree/king-ecom-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/nova.png",
@@ -87,23 +130,7 @@ export const ProjectsData = [
       "Nova Dreams Ticket is a booking platform for NovaDreams experiences. It offers seamless ticket purchasing for entertainment, leisure, and cultural activities, ensuring a convenient and user-friendly interface for visitors.",
     link: "https://uat-ticket.novadreams.com.vn/",
     github: "https://gitlab.com/omni.channel/novadream-fe-web/-/tree/uat",
-  },
-  {
-    image: "/work/luxen.png",
-    category: [
-      "NuxtJS",
-      "NuxtUI",
-      "Typescript",
-      "TailwindCSS",
-      "UnoCSS",
-      "Framer Motion",
-      "Iconify",
-    ],
-    name: "Luxen Gas",
-    description:
-      "Luxen is a premium hospitality platform showcasing luxurious accommodations and services. It highlights modern designs, high-end amenities, and unforgettable experiences tailored for discerning travelers.",
-    link: "https://luxen.newweb.vn/",
-    github: "https://gitlab.com/omni.channel/cds-ubergas-fe/-/tree/luxen-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/giathanh.png",
@@ -121,6 +148,7 @@ export const ProjectsData = [
       "Luxen is a premium hospitality platform showcasing luxurious accommodations and services. It highlights modern designs, high-end amenities, and unforgettable experiences tailored for discerning travelers.",
     link: "https://luxen.newweb.vn/",
     github: "https://gitlab.com/omni.channel/cds-ubergas-fe/-/tree/luxen-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/kozee.jpg",
@@ -143,6 +171,7 @@ export const ProjectsData = [
     link: "https://kozee-v2.newweb.vn/vi",
     github:
       "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/development",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/cds.png",
@@ -165,6 +194,7 @@ export const ProjectsData = [
     link: "https://cds.newweb.vn/vi",
     github:
       "https://gitlab.com/sydaonguyen1999/new-way/-/tree/cds-company-web-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/baoduy.png",
@@ -186,6 +216,7 @@ export const ProjectsData = [
       "Bảo Duy is a platform offering high-quality wooden furniture crafted with modern designs and durable materials. It combines functionality with elegance, catering to both residential and commercial needs.",
     link: "https://baoduy.newweb.vn/vi",
     github: "https://gitlab.com/omni.channel/web-pccc/-/tree/development",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/hoanggia.png",
@@ -208,6 +239,7 @@ export const ProjectsData = [
     link: "https://hoanggia.newweb.vn/vi",
     github:
       "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/dashjk.png",
@@ -217,7 +249,7 @@ export const ProjectsData = [
       "SWR",
       "Typescript",
       "TailwindCSS",
-      "Framer Motion", 
+      "Framer Motion",
       "Iconify",
       "SwiperJS",
       "React Hook Form",
@@ -226,10 +258,11 @@ export const ProjectsData = [
     ],
     name: "Dask JK",
     description:
-      "Hoàng Gia specializes in premium interior design and construction services, delivering luxurious and tailor-made solutions for homes, offices, and hospitality spaces with a focus on sophistication and quality.",
-    link: "https://hoanggia.newweb.vn/vi",
+      "Dask JK is a business specializing in high-quality leather shoes, delivering elegant, durable, and sophisticated fashion products for customers who appreciate refined style.",
+    link: "https://dashjk.vn",
     github:
       "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/foodmap.png",
@@ -248,10 +281,11 @@ export const ProjectsData = [
     ],
     name: "Food Map",
     description:
-      "Hoàng Gia specializes in premium interior design and construction services, delivering luxurious and tailor-made solutions for homes, offices, and hospitality spaces with a focus on sophistication and quality.",
-    link: "https://hoanggia.newweb.vn/vi",
+      "Vietnam Foodmap is a community platform where users share reviews, photos, and experiences of dishes from restaurants and regional specialties across Vietnam. It helps you discover authentic cuisine and quality dining spots nationwide.",
+    link: "https://vietnamfoodmap.com.vn",
     github:
       "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/hoanggia.png",
@@ -274,6 +308,7 @@ export const ProjectsData = [
     link: "https://hoanggia.newweb.vn/vi",
     github:
       "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/veron.png",
@@ -296,6 +331,7 @@ export const ProjectsData = [
     link: "https://hoanggia.newweb.vn/vi",
     github:
       "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+    author: "Tiên Phong CDS",
   },
   {
     image: "/work/aspire.png",
@@ -318,14 +354,24 @@ export const ProjectsData = [
     link: "https://aspire-residental.com/",
     github:
       "https://gitlab.com/sydaonguyen1999/kozee-ecommerce/-/tree/hoang-gia-dev",
+    author: "Tiên Phong CDS",
   },
   {
-    image: "/work/jemmia.png",
-    category: ["HTML", "CSS", "Javascript", "Swiper", "Bootstrap", "PWA"],
-    name: "Jemmia Diamon PWA",
+    image: "/work/luxen.png",
+    category: [
+      "NuxtJS",
+      "NuxtUI",
+      "Typescript",
+      "TailwindCSS",
+      "UnoCSS",
+      "Framer Motion",
+      "Iconify",
+    ],
+    name: "Luxen Gas",
     description:
-      "Jemmia Priority offers exclusive access to high-value diamond and jewelry collections. It provides personalized services, ensuring exceptional quality and uniqueness for customers seeking timeless elegance.",
-    link: "https://priority.jemmia.vn/",
-    github: "https://github.com/lavensoft/jemmia-web",
+      "Luxen is a premium hospitality platform showcasing luxurious accommodations and services. It highlights modern designs, high-end amenities, and unforgettable experiences tailored for discerning travelers.",
+    link: "https://luxen.newweb.vn/",
+    github: "https://gitlab.com/omni.channel/cds-ubergas-fe/-/tree/luxen-dev",
+    author: "Tiên Phong CDS",
   },
 ] as IProject[];

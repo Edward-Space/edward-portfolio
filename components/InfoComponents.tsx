@@ -1,37 +1,35 @@
 import Image from "next/image";
 import avt from "@/assets/img/avt.png";
-import { Code, MailIcon, MapPin, PhoneCall, Plus } from "lucide-react";
+import { Code, Gem, MailIcon, MapPin, PhoneCall } from "lucide-react";
 import { TypingAnimation } from "./magicui/typing-animation";
-import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 import { DownloadCVButton } from "./DownloadCVButton";
 
 const socials = [
   {
-    name: "Junior Frontend Developer",
+    name: "Product Engineer",
     href: "#",
     icon: Code,
   },
   {
-    name: "Github",
-    href: "https://github.com/Edward-Space",
-    icon: GitHubLogoIcon,
+    name: "Front End Developer",
+    href: "#",
+    icon: Code,
   },
-
+  {
+    name: "3D Landing Page",
+    href: "#",
+    icon: Gem,
+  },
   {
     name: "phat2911@gmail.com",
     href: "mailto:phat2911@gmail.com",
     icon: MailIcon,
   },
   {
-    name: "District 8, HCM City",
+    name: "Binh Thanh, HCM City",
     href: "#",
     icon: MapPin,
-  },
-  {
-    name: "+84 916 215 180",
-    href: "tel:+84916215180",
-    icon: PhoneCall,
   },
 ];
 export const InfoComponents = () => {
@@ -93,10 +91,10 @@ export const InfoComponents = () => {
         duration={10}
       >
         Hello, my name is Huỳnh Tấn Phát. I am currently working as a Front-end
-        Developer with over 2 years of experience in user interface
-        development. I am eager to contribute and further develop my skills in a
-        professional environment—one that fosters creativity and innovation to
-        deliver effective and sustainable software solutions.
+        Developer with over 2 years of experience in user interface development.
+        I am eager to contribute and further develop my skills in a professional
+        environment—one that fosters creativity and innovation to deliver
+        effective and sustainable software solutions.
       </TypingAnimation>
     </div>
   );

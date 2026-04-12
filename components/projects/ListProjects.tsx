@@ -13,14 +13,12 @@ import { Pagination } from "../ui/pagination";
 import { Loader2, AlertCircle } from "lucide-react";
 import { Alert, AlertDescription } from "../ui/alert";
 
-export const ListProjects = ({
-  type,
-}: {
-  type: "GRID" | "CAROUSEL" | "GLOBE";
-}) => {
+type TListProjects = { type: "GRID" | "CAROUSEL" | "GLOBE" };
+
+export const ListProjects = ({ type }: TListProjects) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("");
-  
+
   const {
     projects,
     meta,
@@ -31,7 +29,7 @@ export const ListProjects = ({
     loadingCategories,
   } = useProjects({
     page: 1,
-    limit: type === "GRID" ? 6 : 16, // More items for carousel/globe
+    limit: type === "GRID" ? 9 : 16, // More items for carousel/globe
   });
 
   const handleSearch = (search: string) => {
@@ -107,7 +105,6 @@ export const ListProjects = ({
             transition={{ duration: 0.5 }}
             className="space-y-6"
           >
-
             {/* Projects grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 relative">
               {loading && (
@@ -115,7 +112,7 @@ export const ListProjects = ({
                   <Loader2 className="h-6 w-6 animate-spin" />
                 </div>
               )}
-              
+
               {projects.length > 0 ? (
                 projects.map((item, index) => (
                   <ProjectItem key={`${item.name}-${index}`} item={item} />
@@ -160,11 +157,7 @@ export const ListProjects = ({
             exit={{ opacity: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <Carousel3DGlobe
-              items={projects}
-              autoPlay={true}
-              interval={4000}
-            />
+            <Carousel3DGlobe items={projects} autoPlay={true} interval={4000} />
           </motion.div>
         )}
       </div>
@@ -180,15 +173,15 @@ const ProjectItem = ({ item }: { item: IProject }) => {
           <div className="size-[40px] min-w-[40px] rounded-full bg-primary"></div>
           <div className="flex flex-col ">
             <p className="text-lg font-bold capitalize">{item.name}</p>
-            <span className="text-xs font-thin ">Tiên Phong CDS</span>
+            <span className="text-xs font-thin ">{item.author}</span>
           </div>
         </div>
       </div>
-      
+
       <div className="text-sm text-gray-600 dark:text-gray-300">
         {item.description}
       </div>
-      
+
       <div className="rounded-lg overflow-hidden shadow-sm">
         <Image
           src={item.image}
@@ -198,7 +191,7 @@ const ProjectItem = ({ item }: { item: IProject }) => {
           className="w-full object-cover rounded-lg h-[400px] object-top hover:scale-105 transition-transform duration-300"
         />
       </div>
-      
+
       {/* Technology tags */}
       <div className="flex flex-wrap gap-1">
         {item.category.slice(0, 4).map((tech, index) => (

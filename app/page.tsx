@@ -9,6 +9,7 @@ import { Services } from "@/components/Services";
 import { ContactForm } from "@/components/ContactForm";
 import { WorkProcess } from "@/components/WorkProcess";
 import { InteractiveElements } from "@/components/InteractiveElements";
+import { StickySearchLiquidGlass } from "@/components/StickySearchLiquidGlass";
 export default function Home() {
   return (
     <div className="dark:bg-gradient-to-r dark:from-black dark:via-black dark:to-purple-400/20 transition-colors duration-300">
@@ -41,6 +42,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* <StickySearchLiquidGlass /> */}
     </div>
   );
 }

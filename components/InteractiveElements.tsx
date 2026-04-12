@@ -1,7 +1,15 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Moon, Sun, ArrowUp, Github, Linkedin, Mail } from "lucide-react";
+import {
+  Moon,
+  Sun,
+  ArrowUp,
+  Github,
+  Linkedin,
+  Mail,
+  Phone,
+} from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export const ThemeToggle = () => {
@@ -9,25 +17,27 @@ export const ThemeToggle = () => {
 
   useEffect(() => {
     // Check for saved theme preference or default to light mode
-    const savedTheme = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+    const savedTheme = localStorage.getItem("theme");
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)",
+    ).matches;
+
+    if (savedTheme === "dark" || (!savedTheme && prefersDark)) {
       setIsDark(true);
-      document.documentElement.classList.add('dark');
+      document.documentElement.classList.add("dark");
     }
   }, []);
 
   const toggleTheme = () => {
     const newTheme = !isDark;
     setIsDark(newTheme);
-    
+
     if (newTheme) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
+      document.documentElement.classList.add("dark");
+      localStorage.setItem("theme", "dark");
     } else {
-      document.documentElement.classList.remove('dark');
-      localStorage.setItem('theme', 'light');
+      document.documentElement.classList.remove("dark");
+      localStorage.setItem("theme", "light");
     }
   };
 
@@ -80,14 +90,14 @@ export const ScrollToTop = () => {
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
-    return () => window.removeEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
+    return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
 
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 
@@ -116,20 +126,20 @@ export const FloatingSocials = () => {
       icon: Github,
       href: "https://github.com/Edward-Space",
       label: "GitHub",
-      color: "hover:text-gray-900 dark:hover:text-gray-100"
+      color: "hover:text-gray-900 dark:hover:text-gray-100",
     },
     {
       icon: Linkedin,
-      href: "https://linkedin.com/in/huynhtanphat",
+      href: "https://www.linkedin.com/in/ph%C3%A1t-hu%E1%BB%B3nh-102058342/",
       label: "LinkedIn",
-      color: "hover:text-blue-600"
+      color: "hover:text-blue-600",
     },
     {
-      icon: Mail,
-      href: "mailto:phat2911@gmail.com",
-      label: "Email",
-      color: "hover:text-red-500"
-    }
+      icon: Phone,
+      href: "tel:0916215180",
+      label: "Phone",
+      color: "hover:text-red-500",
+    },
   ];
 
   return (
@@ -159,7 +169,7 @@ export const FloatingSocials = () => {
           </motion.a>
         );
       })}
-      
+
       {/* Vertical line */}
       <motion.div
         className="w-px h-20 bg-gradient-to-b from-primary/40 to-transparent mx-auto"
@@ -183,20 +193,22 @@ export const MouseFollower = () => {
     const handleMouseEnter = () => setIsHovering(true);
     const handleMouseLeave = () => setIsHovering(false);
 
-    window.addEventListener('mousemove', updateMousePosition);
-    
+    window.addEventListener("mousemove", updateMousePosition);
+
     // Add hover listeners to interactive elements
-    const interactiveElements = document.querySelectorAll('a, button, [role="button"]');
-    interactiveElements.forEach(el => {
-      el.addEventListener('mouseenter', handleMouseEnter);
-      el.addEventListener('mouseleave', handleMouseLeave);
+    const interactiveElements = document.querySelectorAll(
+      'a, button, [role="button"]',
+    );
+    interactiveElements.forEach((el) => {
+      el.addEventListener("mouseenter", handleMouseEnter);
+      el.addEventListener("mouseleave", handleMouseLeave);
     });
 
     return () => {
-      window.removeEventListener('mousemove', updateMousePosition);
-      interactiveElements.forEach(el => {
-        el.removeEventListener('mouseenter', handleMouseEnter);
-        el.removeEventListener('mouseleave', handleMouseLeave);
+      window.removeEventListener("mousemove", updateMousePosition);
+      interactiveElements.forEach((el) => {
+        el.removeEventListener("mouseenter", handleMouseEnter);
+        el.removeEventListener("mouseleave", handleMouseLeave);
       });
     };
   }, []);
@@ -213,7 +225,7 @@ export const MouseFollower = () => {
         type: "spring",
         stiffness: 500,
         damping: 28,
-        mass: 0.5
+        mass: 0.5,
       }}
     />
   );

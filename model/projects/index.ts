@@ -5,6 +5,7 @@ export interface IProject {
   description: string;
   link: string;
   github: string;
+  author: string;
 }
 
 export interface PaginationParams {
@@ -40,12 +41,14 @@ export interface SingleProjectApiResponse {
 export function projectToSlug(name: string): string {
   return name
     .toLowerCase()
-    .replace(/[^a-z0-9\s]/g, '')
-    .replace(/\s+/g, '-');
+    .replace(/[^a-z0-9\s]/g, "")
+    .replace(/\s+/g, "-");
 }
 
 // Helper function to convert slug back to find project
 export function findProjectBySlug(slug: string): IProject | undefined {
-  const ProjectsData = require('@/data').ProjectsData;
-  return ProjectsData.find((p: IProject) => projectToSlug(p.name) === slug.toLowerCase());
+  const ProjectsData = require("@/data").ProjectsData;
+  return ProjectsData.find(
+    (p: IProject) => projectToSlug(p.name) === slug.toLowerCase(),
+  );
 }

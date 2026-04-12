@@ -15,12 +15,8 @@ interface Carousel3DProps {
   className?: string;
 }
 
-export const Carousel3D = ({
-  items,
-  autoPlay = true,
-  interval = 3000,
-  className,
-}: Carousel3DProps) => {
+export const Carousel3D = (props: Carousel3DProps) => {
+  const { items, autoPlay = true, interval = 3000, className } = props;
   const [currentIndex, setCurrentIndex] = useState(0);
   const [direction, setDirection] = useState(0); // -1 for left, 1 for right
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
@@ -46,14 +42,14 @@ export const Carousel3D = ({
   const handlePrev = () => {
     setDirection(-1);
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? items.length - 1 : prevIndex - 1
+      prevIndex === 0 ? items.length - 1 : prevIndex - 1,
     );
   };
 
   const handleNext = () => {
     setDirection(1);
     setCurrentIndex((prevIndex) =>
-      prevIndex === items.length - 1 ? 0 : prevIndex + 1
+      prevIndex === items.length - 1 ? 0 : prevIndex + 1,
     );
   };
 
@@ -137,7 +133,7 @@ export const Carousel3D = ({
                         alt={item.name}
                         width={400}
                         height={267}
-                        className="object-cover size-auto object-top rounded-t-lg"
+                        className="object-cover size-full object-top rounded-t-lg"
                       />
                     </div>
                     <div className="p-4 flex flex-col flex-grow gap-2">
@@ -155,7 +151,9 @@ export const Carousel3D = ({
                           </span>
                         ))}
                       </div>
-                      <p className="text-sm line-clamp-4 text-black">{item.description}</p>
+                      <p className="text-sm line-clamp-4 text-black">
+                        {item.description}
+                      </p>
                     </div>
                   </Link>
                 </motion.div>
@@ -192,7 +190,7 @@ export const Carousel3D = ({
             }}
             className={cn(
               "w-2 h-2 rounded-full transition-all",
-              index === currentIndex ? "bg-primary w-4" : "bg-gray-300"
+              index === currentIndex ? "bg-primary w-4" : "bg-gray-300",
             )}
             aria-label={`Go to slide ${index + 1}`}
           />

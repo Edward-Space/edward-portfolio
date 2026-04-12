@@ -18,7 +18,7 @@ export const Banner = () => {
       <div className="absolute size-full top-0 left-0 flex justify-center items-center">
         <h1 className="text-4xl font-bold tracking-tighter md:text-5xl lg:text-7xl xl:text-8xl">
           <TypingAnimation className="text-7xl bg-clip-text bg-gradient-to-bl from-primary to-primary text-transparent ">
-            FRONT END DEVELOPER
+            PRODUCT ENGINEER
           </TypingAnimation>
         </h1>
       </div>
